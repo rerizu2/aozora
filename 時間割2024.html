@@ -6,129 +6,143 @@
     <title>青空ホームページ</title>
     <style>
         /* リセットCSS */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        /* ボディのスタイル */
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-        }
+/* ボディのスタイル */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
 
-        /* ヘッダーのスタイル */
-        header {
-            background-color: #22a6bb;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
+/* ヘッダーのスタイル */
+header {
+    background-color: #22a6bb;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
 
-        header nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            margin-top: 10px;
-        }
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
 
-        header nav ul li {
-            margin: 0 15px;
-        }
+header nav ul li {
+    margin: 0 15px;
+}
 
-        header nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-        }
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-        header nav ul li a:hover {
-            text-decoration: underline;
-        }
+header nav ul li a:hover {
+    text-decoration: underline;
+}
 
-        /* セクションのスタイル */
-        section {
-            padding: 60px 20px;
-            max-width: 1000px;
-            margin: auto;
-        }
+/* セクションのスタイル */
+section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
 
-        section#home {
-            background-color: #f4f4f4;
-            text-align: center;
-        }
+section#home {
+    background-color: #f4f4f4;
+    text-align: center;
+}
 
-        section#about, section#contact {
-            background-color: #fff;
-        }
+section#about, section#projects, section#contact {
+    background-color: #fff;
+}
 
-        h2 {
-            text-align: center;
-            margin-bottom: 20px;
-            color: #22a6bb;
-        }
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #22a6bb;
+}
 
-        img {
-            display: block;
-            margin: 20px auto;
-            max-width: 100%;
-            height: auto;
-        }
+h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #555;
+}
 
-        /* フォームのスタイル */
-        form {
-            display: flex;
-            flex-direction: column;
-            max-width: 600px;
-            margin: auto;
-        }
+img {
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+}
 
-        form label {
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
+/* プロジェクトセクションのスタイル */
+.project {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
 
-        form input, form textarea {
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
+/* フォームのスタイル */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
+}
 
-        form button {
-            padding: 10px;
-            background-color: #22c6bb;
-            color: #fff;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
 
-        form button:hover {
-            background-color: #22a6bb;
-        }
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
 
-        /* フッターのスタイル */
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 40px;
-        }
+form button {
+    padding: 10px;
+    background-color: #22c6bb;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
 
-        /* レスポンシブデザイン */
-        @media (max-width: 768px) {
-            header nav ul {
-                flex-direction: column;
-            }
+form button:hover {
+    background-color: #22a6bb;
+}
 
-            header nav ul li {
-                margin: 10px 0;
-            }
-        }
+/* フッターのスタイル */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+}
+
     </style>
 </head>
 <body>
@@ -149,39 +163,15 @@
         </nav>
     </header>
 
-    <!-- 時間割セクション -->
+    <!-- イベントセクション -->
     <section id="about">
-        <h2>青空の時間割表 2024</h2>
-        <h1 id="date-heading"></h1>
-        <img src="時間割2024.jpg" alt="例の画像1" width="900">
+        <h2>青空の時間割</h2>
+         <img src="時間割2024.png" alt="例の画像1" width="900">
     </section>
 
     <!-- フッター -->
     <footer>
-        <p>&copy;青空 2024</p>
+        <p>&copy; 青空 2024</p>
     </footer>
-
-    <script>
-        // 現在の日付を取得して時間割に表示
-        document.addEventListener('DOMContentLoaded', () => {
-            const today = new Date();
-            const options = { year: 'numeric', month: 'long', day: 'numeric' };
-            const formattedDate = today.toLocaleDateString('ja-JP', options);
-            document.getElementById('date-heading').textContent = `${formattedDate} の時間割`;
-
-            // フォームバリデーション
-            const form = document.querySelector('form');
-            form.addEventListener('submit', (e) => {
-                const name = document.getElementById('name').value.trim();
-                const email = document.getElementById('email').value.trim();
-                const message = document.getElementById('message').value.trim();
-
-                if (!name || !email || !message) {
-                    alert('すべてのフィールドを入力してください。');
-                    e.preventDefault();
-                }
-            });
-        });
-    </script>
 </body>
 </html>
