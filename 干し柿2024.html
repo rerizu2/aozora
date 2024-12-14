@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>青空ホームページ</title>
+    <style>
+        /* リセットCSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* ボディのスタイル */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* ヘッダーのスタイル */
+        header {
+            background-color: #22a6bb;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        header nav ul li {
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* セクションのスタイル */
+        section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        section#home {
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        section#about, section#projects, section#contact {
+            background-color: #fff;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #22a6bb;
+        }
+
+        h3 {
+            text-align: center;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        /* フォームのスタイル */
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        form label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        form input, form textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        form button {
+            padding: 10px;
+            background-color: #22c6bb;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #22a6bb;
+        }
+
+        /* フッターのスタイル */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        /* レスポンシブデザイン */
+        @media (max-width: 768px) {
+            header nav ul {
+                flex-direction: column;
+            }
+
+            header nav ul li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header>
+        <h1>青空ホームページ</h1>
+        <nav>
+            <ul>
+                <li><a href="ホームページ.html">ホーム</a></li>
+                <li><a href="時間割2024.html">青空 2024年 時間割表</a></li>
+                <li><a href="青空イベント.html">青空イベント</a></li>
+                <li><a href="青空紹介.html">青空紹介</a></li>
+                <li><a href="青空の生活.html">青空の生活</a></li>
+                <li><a href="お問い合わせ.html">お問い合わせ</a></li>
+                <li><a href="最新情報.html">青空最新情報</a></li>
+                <li><a href="田原本中学校.html">田原本中学校ホームページへ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- イベントセクション -->
+    <section id="about">
+        <h2>青空生活 2024 干し柿作り</h2>
+        <h3>皆さんは干し柿を作ったことはありませんか。え！皆さん作ったことないですって！じゃあ、青空生徒の手を借りてぜひ作ってください。</h3>
+        <img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBPSDqqyzE_ur9zFCVq_a16pr162uGViH0v_7VaquKNcn3hmAru9A0K3Wlt071d2UF1xTO_H0uM2qlHTkFvcsRbXVrepLOkayEgOd6gfi-zdcew=w679-h614" alt="例の画像" width="450">
+        <img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBMmb7jrpg443JLTPpLKNiMvep3ZrhKzVJHtjE-VEDjb8Xu81WTHfjrPEdh6xXj5KjBHp9ceQ3Ju9n_QsXmIxutP4ttbxZq5hWB1PX2VN8ql9SM=w679-h614" alt="例の画像" width="450">
+        <img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBNmOv9StxWwhoidCg396CTr28paLLPITDjwoSCtOi0GFjRwhuPmpDVqhd2Sb2Kv9Xkg6hhlKQzPMixuhEUEw8rDgIHUdRywgntUT-yosjSSY38=w679-h614" alt="例の画像" width="450">
+        <img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBPv4IPqD8ObNaD_hAc6Luc0fLBVW6LqncRbB5VcaoNFUZpYK7gWJjnft2fcX6JIT9BO3cGIKU3UyCG_Df3M7XNa0FKOg1KdiTQt-toPEbgYaQA=w679-h614" alt="例の画像" width="450">
+        <img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBOnoWCicUrr1Vm_QDyo3bqAeP2hYGjCeqtut4ClpruOTCTX-7wHHok4vI5Mk0pcWC0PRVb0lkQLZpDITUOEDd2N64AbsHF640p3THt1Af3s6TQ=w679-h614" alt="例の画像" width="450">
+        <img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBPGU5Ocp_6fMHRJ1vVHs5Mk8o-BzoWI4fnPNX4nGShRPsiiA49cete2HX7A2bZDeUGVOoU7_7Rs4QswDcy7BTF24l-LvGaSuwBl573EwG9KMRE=w679-h614" alt="例の画像" width="252">
+        <img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBMSEOZRmMG6_zrY0vLB_xz2woBYHzejZaEwmkDSC-DaZKHjJMN_rbcCRaxhww0uoK-lqQlt1wHrqz2x7DFAxwiUUrbzw_ZIaxffEYNojlj5Pa0=w679-h614" alt="例の画像" width="450">
+        <img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBM9fGTiaQNDGxSOatFOVg1Y2UWMCJNN6DCd_-qPyZKc83agyDekf-BEyLBq8Ajem7KPGO2zDqcIsnSJ0SG3vdkOg-lDCK0ucOoqvfTYEUXBwUE=w679-h614" alt="例の画像" width="450">
+        <img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBNIj9hyeome_IL9mdz36ip7RKDvM9mHpvtqXqLFkHE1ZGlNOotAhrszZn6vHzt1VeQ1Iq9PYfaYqVosjXNtUg4UwdzorrMv6KeCucULsDbvCQg=w679-h614" alt="例の画像" width="450">
+        <img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBOQ5QgpTW0OmtdUQYuc46utpNjuUkNd6qPuopwWsQepSYtmFq4OU9rkHnIIcaEhBmJ_puovCaEcMOTl0u0HqO-ZdudcCDC7E34xcHPAh0DVunQ=w679-h614" alt="例の画像" width="450">
+        <h3>うぁ〜とても寒い</h3>
+        <img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBPsv6dO4abFpbE_Mta65tp6utfnjiwoDP1eyozJvCkTaKrqzG01Ya85Aw5q6tqX_iM0usjPv4iTWNLoxlNR9gl_voxBljeCI98Ybtaf71LL7zM=w679-h614" alt="例の画像" width="450">
+        <img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBN_IZUe13cqWXSfXVyURc2CxyDt6Wdhtpdfyc8Gxo_GEyJ8qjwgnWlOHF-OdG9DiacaPUXTBBY_had2axUpjnPqskA-0F_W-DFcPM8ve1rFclA=w679-h614" alt="例の画像" width="450">
+        <img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBMQWi9nHwYqOV1tioSahg07VqapgzqfYtC36VjICOwi38m4b-cOBcTjDAR44cHE8Ro5ZTEdUO-eZvo222YultMD439Hb66DiN80bQxzSdgg8tU=w679-h614" alt="例の画像" width="450">
+        <img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBN4Dkl84qvJpRdgSqmwWh7YRQFSRbEeiFwB02TuSpJf1dpZ6Umk7ivPbBDZpYTmnloPHynUGQ3WpbcK4dbchZKUmLsxS-EoleCAfrN8--RRvy0=w679-h614" alt="例の画像" width="450">
+        <h3>柿に糸を付けて...</h3>
+        <img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBP3NPGkttUfAk-KOj1Nqiozfeqf7TNNjSwIy_pjAAXEFTfHkdlEoPwzb43SdSjb8g3QLCnqdT17_fMzyGOQ60dn4yPInXnalxplakGLIjyGvpE=w679-h614" alt="例の画像" width="450">
+        <img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBOgHbPNp7dBO_ox4ubwggdvh1yqwaoXYu6aiHojUpyDG3JNQEGpXbONnEP0cvD6unSCUXjbpxQGFuvM3rabtehqglyu3q1et9H25MkYA_SCB-E=w679-h614" alt="例の画像" width="450">
+        <img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBMmg7VOH7tUK58zRlYdpp_khzAi1kUrNUbzeNRC-XFcfDMDQ5uhP8HKkhESKiqrRy-2AMJ--hKKM-y2uxrE2DjCA-M4Utqk0eVHqcHb2rrHVHA=w679-h614" alt="例の画像" width="450">
+        <img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBOJzqMKo_gLW8qIpBtpbSvkWHod1mMmEhRnvJIAxn-7GB1H1TYpZTOs9WmEo62c-FJ9jdZe6aNPXaOhMYm3zRkfUNzhJNneN7PI03jsvXTXfV0=w679-h614" alt="例の画像" width="450">
+        <img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBOeKPakzC6OTmhztXm-X9zyMnxsJO-BnEZ80MLohlrMA-0W5PrtjKHjXH4tiqZ1fkmmn78l5vaq2gQA-vxUiR0fKV6oiiyE3Y0FMI-Jwg-ihnQ=w679-h614" alt="例の画像" width="450">
+        <img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBP6UHv6EoAJMQihSlvHj7Z5slqnL5N23eEPixtVft3LezjiPCqCVrXugdCNyEOJHx95KV00O8JEzGPoF0MRYYPL4dHKKOlA1ELzv7jWi8dpy1I=w679-h614" alt="例の画像" width="450">
+        <img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBN94ZHMLybCyiGK4m3N4m5hcNY-bBmk3Sk3nSTnxtriDZ7--_753lBFAhPT12Csy_2TXfiTPcg_ntTriEpEtXzxJHp0pJdW1XE4n6dBxfSRo0Y=w679-h614" alt="例の画像" width="450">
+        <img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBMq7WkvOETLTAAPjPED2MUrC7Hl5qsGmUCGwHGaa1XvCfaGiCJVppYZoTcI6Quby0KOi7hSwa49jO_3BBQ-rduClgFS4hsqjbL3AN75TAtLOgE=w679-h614" alt="例の画像" width="450">
+        <img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBNgJYwlR2jWFCooaSdeEo5rgytxYlPQsMXJkrcCbXJUw8TElutptZsPQFoSos7Sl7YEx-sRXwvdYwWat9wFLWXri_kc9Frb-knLdiWcb0lwwSE=w679-h614" alt="例の画像" width="450">
+        <img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBNr3jgc-Iy5WGF0xqwGWlgNrgbc3nzJECKd2voceARLraWOaQ6HXWCMm4nm_aqXYNXVOnFckAxgI6qbkdYZShVcRjzEPzbOZhpTVTYxte4019M=w679-h614" alt="例の画像" width="450">
+        <img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBPNCXYJsqUoNcIAH4zyCV1SptXU0blMoaDytQspqT5XeP57l53QNMGVDMXeOGoGGZP2qV6fFQIyeOesHKWKcgZWVIx7PWNrZ2gaHAaoNsYFLW4=w679-h614" alt="例の画像" width="450">
+        <h3>使ったものはしっかり洗いましょう。</h3>
+        <img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBMIHw35P48BTqjnuWFVmfS08SPKZGXozj99RxFtLsImX2x1monPXeaebCQWm4GnNh0v-wT9zQwDXrUagkW1n5_RtzD0Wp63BGkrFTb6RGkhNa4=w679-h614" alt="例の画像" width="450">
+        <img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBNXLwQd8ZTn3aTm3NjyVhlybx1HxbIZ6a23dkMCZawYYU5EsErijbMyWL9wYbIY9bVrTw4JvZ7P0qiazfUDvQKZa-J5VmZM9iQpGGB-8vO2Jjo=w679-h614" alt="例の画像" width="450">
+        <img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBOwr2b-SGgXlSHtRo3rQjEE2Zon9o2KM2xNMuGfYaNLop-wwZypyjo4G6AUSASTSNulORTBlcdRaghfkjfmwLj-iKEfjxiW4uUUARFJPAyUrX0=w679-h614" alt="例の画像" width="450">
+        <img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBNRDxL-7lLusJv2g-43C1RvKBm2pXbqXBrPS3ivKkRvkScP98bFFHGTGlbJNq_PyVghlGrutxKSJ0oykXa4IwWSr6nT9hsCP0DlCq2GU4rItMQ=w679-h614" alt="例の画像" width="450">
+        <img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBOr5gvB7VG_FGqXJBiyukc-_hWyy-W2Sp4PJSw61dQibxUKFV-Jo3hckoOHihay70LGdEOntTN02Kw2kmFqya0b-lI93iVKi3m93o5yD_6ekTs=w679-h614" alt="例の画像" width="450">
+        <img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBPOlQfloFaF1q1CNBcSNU0f4EE8akyP6Ei6Uw6Fwr9wiSkkiM3j9LSCrHOjC2r9MnGffQpDsNV0C8A8Awr-NwZ9zIVkzG0TgnHDEMBC0fDlAT4=w679-h614" alt="例の画像" width="450">
+        <img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBO3ShTjIwYWDdpanLq0zjOVlOJmZsyn5C9okfNwTWEHLT0BeH4SKGSw2acNp7Ux6prvzGa94Na4Zj2ES6lPRNhOP8jJjwjwa2wToAezB4TxVFA=w679-h614" alt="例の画像" width="450">
+        <img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBOX3IFT5fSK7F5zvkGEboWXE8nhYKLbXIBAcLMJHT8Fww0mvP9sB-kjGkvSmmBXKGBC8RsApTba91HykNmW39dph80dL3lLMksCp8lTUjHC_Q0=w679-h614" alt="例の画像" width="450">
+        <h2>！完成！</h2>
+        <img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBMYgXEG7oTtKm_Z2V--bfyCFDqeFPXcCsGF7H27Adv92F4melb3aUN2piU31rD7ZG00gbrOrqw3YWFYMvlrRzkdSN2etVyvw46X6VC5zvnbEtk=w679-h614" alt="例の画像" width="900">
+        <h2>写真はこれで全てです。</h2>
+    </section>
+
+    <!-- フッター -->
+    <footer>
+        <p>&copy; 青空 2024</p>
+    </footer>
+</body>
+</html>
